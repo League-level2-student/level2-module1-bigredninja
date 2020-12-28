@@ -16,8 +16,12 @@ public class GuestBook {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
 		JPanel panel = new JPanel();
-		JButton b1 = new JButton();
-		JButton b2 = new JButton();
-		
+			JButton b1 = new JButton("Add Name");
+		JButton b2 = new JButton("View Name");
+		b1.addMouseListener(null);
+		b2.addMouseListener(null);		
+	
+	
 	}
+		
 }
