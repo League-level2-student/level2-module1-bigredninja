@@ -45,9 +45,20 @@ public class GuestBook implements ActionListener {
 			String addName = JOptionPane.showInputDialog("Give me a name you want to add to the guest book");
 			names.add(addName);
 		}
+		String viewName = "";
 		if (arg0.getSource() == b2) {
-			 JOptionPane.showMessageDialog(null, names);
+			 for (int i = 0; i < names.size(); i++) {
+				 
+				 
+				 if (names.get(i) == null) {
+						viewName = viewName + "Guest " + i + " " + "\n";
+			}
+				 else {
+					 viewName = viewName + "Guest " + i + " " + names.get(i) + " " + "\n";
+				}
+				 }
 			 
+			 JOptionPane.showMessageDialog(null, viewName);
 		}
 	}
 }
